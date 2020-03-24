@@ -23,13 +23,6 @@ def envRead(stackname):
 
     print("@ read environment")
 
-
-@click.command()
-def getStacks():
-    client = boto3.client('cloudformation')
-    stacks = client.describe_stacks()
-
-
 @click.command()
 def envUpdate():
     print("@update environemnt")
